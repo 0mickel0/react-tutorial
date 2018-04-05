@@ -8,6 +8,7 @@ import VideoDefault from './components/youtube/video_default'
 import './style/style.scss'
 
 import BookList from './components/books/containers/book-list'
+import BookDetail from './components/books/containers/book-detail'
 import { Provider } from "react-redux";
 import reducers from "./components/books/reducers/index";
 import { createStore } from "redux";
@@ -38,6 +39,7 @@ class App extends Component {
         return  (
             <div>
                 <BookList />
+                <BookDetail />
                 {/*<SearchBar onSearchTermChange={videoSearch}/>*/}
                 {/*<VideoDefault video={this.state.selectedVideo}/>*/}
                 {/*<VideoList*/}
